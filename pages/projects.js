@@ -1,7 +1,7 @@
 import Card from "../components/Card";
 import { projects } from "../data";
 
-export default () => (
+const Projects = () => (
   <div className="fading-in">
     <div className="content ">
       <div>
@@ -19,8 +19,10 @@ export default () => (
         </h1>
       </div>
     </div>
-    {projects.map((cardInfo) => (
-      <Card {...cardInfo}></Card>
+    {projects.map((cardInfo, i) => (
+      <Card key={i} {...cardInfo}></Card>
     ))}
   </div>
 );
+
+export default Projects;

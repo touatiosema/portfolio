@@ -1,6 +1,6 @@
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
-export default function Home() {
+const Home = () => {
   return (
     <div className="content text-2xl md:text-4xl">
       <div className="fading-in">
@@ -18,6 +18,7 @@ export default function Home() {
           <a
             href="http://www.esi.dz"
             target="_blank"
+            rel="noreferrer" 
             className="text-blue-600 hover:text-blue-500"
           >
             ESI
@@ -44,7 +45,6 @@ export default function Home() {
             <Link href="/about">
               <a
                 className="text-yellow-600 hover:text-yellow-500"
-                href="/about"
               >
                 Learn more about me {">"}
               </a>
@@ -55,3 +55,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

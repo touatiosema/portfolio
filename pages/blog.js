@@ -1,4 +1,4 @@
-export default () => (
+const Blog = () => (
   <div className="p-5 md:p-24 fade-in">
     <h3 className="text-3xl md:text-5xl mb-5">Here you find my writings</h3>
     <p className="text-gray-300 md:text-xl pl-5">
@@ -6,3 +6,5 @@ export default () => (
     </p>
   </div>
 );
+
+export default Blog;

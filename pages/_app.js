@@ -2,7 +2,7 @@ import Head from "next/head";
 import NavBar from "../components/NavBar";
 import "../styles/globals.scss";
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>

@@ -1,4 +1,4 @@
-export default () => (
+const Contact = () => (
   <div className="fading-in">
     <div className="p-5 md:p-24">
       <h2 className="text-4xl md:text-6xl mb-5 font-bold">Lets Talk!</h2>
@@ -7,7 +7,8 @@ export default () => (
         <a
           href="mailto:go_touati@esi.dz?subject=Hello Osema!"
           target="_blank"
-          class="text-yellow-500 hover:text-yellow-300"
+          rel="noreferrer"
+          className="text-yellow-500 hover:text-yellow-300"
         >
           go_touati@esi.dz
         </a>
@@ -15,3 +16,5 @@ export default () => (
     </div>
   </div>
 );
+
+export default Contact;

@@ -1,5 +1,5 @@
 import Link from "next/link";
-export default () => (
+const About = () => (
   <div className="content text-2xl md:text-3xl">
     <div className="fading-in">
       <h1 className="title font-semibold">
@@ -12,9 +12,9 @@ export default () => (
         I’m Osema TOUATI, but you can just call me Osema.
       </p>
       <p className="mb-10 ">
-        I was an international student, I took part of a double degree programe, I graduated recently and I'm looking for new opportunities. Here is{" "}
+        I was an international student, I took part of a double degree programe, I graduated recently and I&apos;m looking for new opportunities. Here is{" "}
         <Link href="/studies">
-          <a className="text-yellow-600 hover:text-yellow-500" href="/studies">
+          <a className="text-yellow-600 hover:text-yellow-500">
             My academic background
           </a>
         </Link>
@@ -24,9 +24,9 @@ export default () => (
       <p className="mb-10">
         I recently finished an internship at 
         <a href="https://www.soprasteria.com/" className="text-blue-600 hover:text-blue-500"> Sopra Steria</a> followed by a job proposition.
-        I worked on the maintenance of groupe of applications by fixing bugs and adding new features. You can find more about my professional background{" "}
+        I worked on the maintenance of a groupe of applications by fixing bugs and adding new features. You can find more about my professional background{" "}
         <Link href="/studies">
-          <a className="text-yellow-600 hover:text-yellow-500" href="/studies">
+          <a className="text-yellow-600 hover:text-yellow-500">
             here
           </a>
         </Link>
@@ -38,7 +38,7 @@ export default () => (
         management, continuous integration and developement, teamwork... you can
         check my technical/soft skills{" "}
         <Link href="/skills">
-          <a className="text-yellow-600 hover:text-yellow-500" href="/skills">
+          <a className="text-yellow-600 hover:text-yellow-500">
             here
           </a>
         </Link>
@@ -47,7 +47,7 @@ export default () => (
       <p className="mb-10">
         Don't hesitate to{" "}
         <Link href="/contact">
-          <a className="text-yellow-600 hover:text-yellow-500" href="/contact">
+          <a className="text-yellow-600 hover:text-yellow-500">
             contact
           </a>
         </Link>{" "}
@@ -56,3 +56,5 @@ export default () => (
     </div>
   </div>
 );
+
+export default About;

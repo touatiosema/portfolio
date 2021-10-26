@@ -1,6 +1,6 @@
 import styles from "../styles/Card.module.scss";
 
-export default ({
+const Card = ({
   image,
   projectLink,
   title,
@@ -26,6 +26,7 @@ export default ({
             className="text-yellow-500 hover:text-yellow-600 pl-3"
             href={projectLink}
             target="_blank"
+            rel="noreferrer"
           >
             {title}
           </a>
@@ -41,3 +42,5 @@ export default ({
     </div>
   </div>
 );
+
+export default Card;

@@ -29,6 +29,7 @@ const StudyPhase = ({
           className="block mt-3 text-yellow-500 hover:text-yellow-300"
           href={link}
           target="_blank"
+          rel="noreferrer" 
         >
           check here for more.
         </a>
@@ -36,10 +37,12 @@ const StudyPhase = ({
     </p>
   </div>
 );
-export default () => (
+const Studies = () => (
   <div className="p-5 md:p-24 fading-in">
-    {info.map((s) => (
-      <StudyPhase {...s} />
+    {info.map((s, i) => (
+      <StudyPhase key={i} {...s} />
     ))}
   </div>
 );
+
+export default Studies;
