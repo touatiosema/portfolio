@@ -90,6 +90,12 @@ const NavBar = () => {
                   current={router.asPath === "/studies"}
                   text="Studies"
                 />
+                {/* <NavLink
+                  href="/skills"
+                  as="/skills"
+                  current={router.asPath === "/skills"}
+                  text="Skills"
+                /> */}
                 <NavLink
                   href="/blog"
                   as="/blog"
