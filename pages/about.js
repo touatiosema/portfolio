@@ -34,11 +34,11 @@ const About = () => (
       </p>
 
       <p className="mb-10">
-        I try to specialize in <span class="bg-white text-black p-0.5 rounded-md font-bold">web apps developement</span>, in both backend and
+        I try to specialize in <span className="bg-white text-black p-0.5 rounded-md font-bold">web apps developement</span>, in both backend and
         frontend, at the same time learning the best practices of software developement and how to build maintainable solutions with a clean code, 
         {/* continuous integration and developement, teamwork...  */}
         you can
-        check my <span class="text-green-500">technical/soft skills</span>{" "}
+        check my <span className="text-green-500">technical/soft skills</span>{" "}
         <Link href="/projects">
           <a className="text-yellow-600 hover:text-yellow-500">
             here
